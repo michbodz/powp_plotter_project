@@ -5,7 +5,7 @@ import java.util.List;
 import edu.iis.client.plottermagic.IPlotter;
 
 public class ComplexCommand implements PlotterCommand {
-	//Poprzez fakt posiadania klasy w hierarchii poleceń występuje wzorzec kompozyt 
+	//Poprzez fakt posiadania klasy ComplexCommand w hierarchii poleceń występuje wzorzec kompozyt 
 	
 	private List<PlotterCommand> list;
 	
