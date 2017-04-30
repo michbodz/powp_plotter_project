@@ -14,4 +14,15 @@ public class FactoryCommand {
 		commandArrayList.add(new CommandDrawLineToPosition(x, y));
  		return new ComplexCommand(commandArrayList);
 	}
+	
+	public static ComplexCommand createRightTrapezoid(int x, int y, int height, int width ) {
+		List<PlotterCommand> commandArrayList = new ArrayList<PlotterCommand>();
+		commandArrayList.add(new CommandSetPosition(x, y));
+		commandArrayList.add(new CommandDrawLineToPosition(x + width, y));
+		commandArrayList.add(new CommandDrawLineToPosition(x + width - (width / 3), y + height));		
+		commandArrayList.add(new CommandDrawLineToPosition(x , y + height));		
+		commandArrayList.add(new CommandDrawLineToPosition(x, y));
+ 		return new ComplexCommand(commandArrayList);
+	}
+	
 }

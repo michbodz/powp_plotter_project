@@ -25,6 +25,8 @@ public class SelectTestFigureOptionListener implements ActionListener
 			FiguresJoe.figureScript2(Application.getComponent(DriverManager.class).getCurrentPlotter());
 		} else if (checkWhichTest.equals("Figure Command 1")) {
 			FactoryCommand.createRectangle(0, 0, 100, 200).execute(Application.getComponent(DriverManager.class).getCurrentPlotter());
-		}               
+		} else if (checkWhichTest.equals("Figure Command 2")) {
+			FactoryCommand.createRightTrapezoid(-150, -150, 100, 200).execute(Application.getComponent(DriverManager.class).getCurrentPlotter());
+		}			
     }
 }
