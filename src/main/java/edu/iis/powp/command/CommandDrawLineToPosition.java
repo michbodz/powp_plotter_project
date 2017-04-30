@@ -6,9 +6,15 @@ public class CommandDrawLineToPosition implements PlotterCommand {
 
 	private int x;
 	private int y;
-
+		
 	@Override
 	public void execute(IPlotter driver) {		
 		driver.drawTo(x, y);
 	}
+	
+	public CommandDrawLineToPosition(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}	
 }
